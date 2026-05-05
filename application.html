@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apply | West Miami Rentals</title>
+<style>
+:root{--bg:#101820;--card:#17242d;--text:#f7fbff;--muted:#b8c7cf;--aqua:#58d6c7;--gold:#f0c66b;--line:rgba(255,255,255,.12);--glow:0 0 35px rgba(88,214,199,.25)}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:radial-gradient(circle at 15% 10%,rgba(88,214,199,.18),transparent 30%),linear-gradient(135deg,#101820,#081015);color:var(--text)}.wrap{width:min(950px,92vw);margin:auto;padding:40px 0}a{color:var(--aqua);font-weight:900;text-decoration:none}.card{background:rgba(255,255,255,.07);border:1px solid var(--line);border-radius:30px;padding:30px;box-shadow:var(--glow)}h1{font-size:clamp(42px,6vw,70px);line-height:.92;margin:16px 0;letter-spacing:-3px}p{color:var(--muted);line-height:1.6}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:22px 0}.step{background:rgba(255,255,255,.07);border:1px solid var(--line);border-radius:20px;padding:16px}form{display:grid;grid-template-columns:1fr 1fr;gap:12px}input,select,textarea{width:100%;padding:15px;border-radius:15px;border:1px solid var(--line);background:rgba(255,255,255,.08);color:white;font:inherit}select option{color:#111}textarea,.wide{grid-column:1/-1;min-height:100px}.btn{border:0;border-radius:999px;padding:15px 18px;background:linear-gradient(135deg,var(--gold),#fff0ad);color:#1b1304;font-weight:900;cursor:pointer}@media(max-width:700px){form,.steps{grid-template-columns:1fr}.wide,textarea{grid-column:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<a href="index.html">← Back to West Miami Rentals</a>
+<div class="card">
+<span style="color:var(--aqua);font-weight:900">West Miami Rentals · Application Intake</span>
+<h1>Start your rental application.</h1>
+<p>This collects basic renter details before sending the applicant to the property manager’s official screening/application portal.</p>
+<div class="steps">
+<div class="step"><b>1. Intake</b><br><span>Basic renter info.</span></div>
+<div class="step"><b>2. Review</b><br><span>Rep confirms options.</span></div>
+<div class="step"><b>3. Screening</b><br><span>Official application portal.</span></div>
+</div>
+<form onsubmit="event.preventDefault(); alert('Application intake captured. Connect this to CRM or official application portal.');">
+<input required placeholder="Full legal name">
+<input required placeholder="Phone number">
+<input required type="email" placeholder="Email address">
+<input placeholder="Desired move-in date">
+<input placeholder="Current address">
+<input placeholder="Employer / income source">
+<select><option>Monthly income range</option><option>Under $3,000</option><option>$3,000–$5,000</option><option>$5,000–$7,500</option><option>$7,500+</option></select>
+<select><option>Bedroom preference</option><option>Studio</option><option>1 Bedroom</option><option>2 Bedrooms</option><option>3+ Bedrooms</option></select>
+<select><option>Pets?</option><option>No</option><option>Yes - cat</option><option>Yes - dog</option><option>Other</option></select>
+<select><option>Estimated credit</option><option>Excellent</option><option>Good</option><option>Fair</option><option>Needs work</option><option>Not sure</option></select>
+<textarea placeholder="Additional notes for leasing team"></textarea>
+<button class="btn wide" type="submit">Submit Application Intake</button>
+<p class="wide">This is not a lease or approval. Final screening, credit/background checks, and lease contracts should be completed through the property manager’s approved system.</p>
+</form>
+</div>
+</div>
+</body>
+</html>

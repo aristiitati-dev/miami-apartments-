@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>West Miami Rentals | Apartments in Miami, FL</title>
+<meta name="description" content="Find clean, move-in ready apartments in West Miami. Schedule a tour, check availability, and start your rental application.">
+<style>
+:root{--bg:#101820;--card:#17242d;--card2:#1e303b;--text:#f7fbff;--muted:#b8c7cf;--aqua:#58d6c7;--gold:#f0c66b;--line:rgba(255,255,255,.12);--glow:0 0 35px rgba(88,214,199,.25)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:radial-gradient(circle at 15% 10%,rgba(88,214,199,.18),transparent 30%),linear-gradient(135deg,#101820,#081015);color:var(--text)}a{text-decoration:none;color:inherit}.wrap{width:min(1150px,92vw);margin:auto}
+header{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(8,16,21,.82);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}nav{height:74px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:24px;font-weight:900}.logo span{color:var(--aqua)}.links{display:flex;gap:22px;font-weight:700;color:var(--muted);font-size:14px}.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:13px 18px;background:linear-gradient(135deg,var(--aqua),#8bdcff);color:#061113;font-weight:900;border:0;cursor:pointer;box-shadow:var(--glow)}.btn.gold{background:linear-gradient(135deg,var(--gold),#fff0ad);color:#1b1304}.btn.dark{background:rgba(255,255,255,.08);color:white;border:1px solid var(--line);box-shadow:none}.btn.full{width:100%}
+.hero{min-height:100vh;padding-top:74px;display:grid;grid-template-columns:1fr 1fr}.hero-text{padding:90px 6vw;display:flex;flex-direction:column;justify-content:center}.pill{display:inline-block;width:max-content;border:1px solid var(--line);background:rgba(255,255,255,.08);color:var(--aqua);border-radius:999px;padding:10px 14px;font-weight:900;font-size:13px;margin-bottom:20px}h1{font-size:clamp(46px,7vw,86px);line-height:.9;margin:0 0 22px;letter-spacing:-3px}.sub{color:var(--muted);font-size:20px;line-height:1.55;max-width:650px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:18px}.stat{background:rgba(255,255,255,.07);border:1px solid var(--line);border-radius:20px;padding:15px}.stat b{font-size:24px;display:block}.stat small{color:var(--muted);font-weight:800;text-transform:uppercase;font-size:11px}
+.hero-img{position:relative;overflow:hidden;background:#000}.slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;animation:fade 24s infinite;filter:brightness(.85)}.slide:nth-child(1){background-image:url('https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1600');animation-delay:0s}.slide:nth-child(2){background-image:url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1600');animation-delay:4s}.slide:nth-child(3){background-image:url('https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1600');animation-delay:8s}.slide:nth-child(4){background-image:url('https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1600');animation-delay:12s}.slide:nth-child(5){background-image:url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1600');animation-delay:16s}.slide:nth-child(6){background-image:url('https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1600');animation-delay:20s}@keyframes fade{0%{opacity:0;transform:scale(1.08)}8%{opacity:1}22%{opacity:1;transform:scale(1)}30%{opacity:0}100%{opacity:0}}
+.video-card{position:absolute;left:25px;right:25px;bottom:25px;background:rgba(15,26,33,.82);backdrop-filter:blur(18px);border:1px solid var(--line);border-radius:28px;padding:22px;box-shadow:var(--glow)}.video-card h2{margin:0 0 8px;font-size:30px}.video-card p{color:var(--muted);margin:0;line-height:1.5}.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.tag{border:1px solid rgba(240,198,107,.35);background:rgba(240,198,107,.12);color:#ffe2a0;border-radius:999px;padding:8px 11px;font-size:13px;font-weight:900}
+section{padding:70px 0}h2{font-size:clamp(34px,4vw,56px);line-height:1;margin:0 0 14px;letter-spacing:-2px}.lead{color:var(--muted);font-size:18px;line-height:1.6;max-width:760px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:25px}.card{background:rgba(255,255,255,.07);border:1px solid var(--line);border-radius:26px;padding:24px;box-shadow:0 18px 40px rgba(0,0,0,.18);transition:.2s}.card:hover{transform:translateY(-5px);box-shadow:var(--glow)}.card h3{margin:0 0 10px}.card p{color:var(--muted);line-height:1.5}
+.gallery{display:grid;grid-template-columns:1.4fr .8fr .8fr;gap:13px;margin-top:25px}.gallery img{width:100%;height:250px;object-fit:cover;border-radius:24px;border:1px solid var(--line);cursor:pointer;transition:.25s}.gallery img:hover{transform:scale(1.03);box-shadow:var(--glow)}.gallery img:first-child{height:513px;grid-row:span 2}
+.formbox{background:linear-gradient(135deg,#121f27,#1a2d36);border:1px solid var(--line);border-radius:34px;padding:30px;box-shadow:var(--glow)}form{display:grid;grid-template-columns:1fr 1fr;gap:12px}input,select,textarea{width:100%;padding:15px;border-radius:15px;border:1px solid var(--line);background:rgba(255,255,255,.08);color:white;font:inherit}select option{color:#111}textarea,.wide{grid-column:1/-1;min-height:100px}.apply{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:center;background:rgba(255,255,255,.07);border:1px solid var(--line);border-radius:34px;padding:30px;box-shadow:var(--glow)}
+footer{background:#070d11;border-top:1px solid var(--line);padding:35px 0;color:var(--muted)}footer b{color:white}.chat-btn{position:fixed;right:20px;bottom:20px;z-index:50}.chat{display:none;position:fixed;right:20px;bottom:82px;width:min(400px,92vw);height:560px;background:#101b22;border:1px solid var(--line);border-radius:25px;box-shadow:var(--glow);z-index:60;overflow:hidden}.chat.open{display:flex;flex-direction:column}.chat-head{background:#14242c;padding:15px;display:flex;justify-content:space-between;border-bottom:1px solid var(--line)}.chat-body{flex:1;overflow:auto;padding:14px;display:flex;flex-direction:column;gap:10px}.bubble{max-width:88%;padding:11px 13px;border-radius:16px;line-height:1.4}.bot{background:rgba(255,255,255,.08);border:1px solid var(--line)}.user{align-self:flex-end;background:linear-gradient(135deg,var(--aqua),#8bdcff);color:#061113;font-weight:700}.quick{display:flex;gap:7px;flex-wrap:wrap;padding:10px;border-top:1px solid var(--line)}.quick button{border:1px solid var(--line);background:rgba(255,255,255,.08);color:white;border-radius:999px;padding:8px 10px}.chat-input{display:flex;border-top:1px solid var(--line)}.chat-input input{border:0;border-radius:0}.chat-input button{background:var(--aqua);border:0;font-weight:900;padding:0 16px}
+@media(max-width:900px){.hero,.apply{grid-template-columns:1fr}.hero-img{min-height:550px}.grid{grid-template-columns:1fr 1fr}.links{display:none}.gallery{grid-template-columns:1fr 1fr}.gallery img:first-child{grid-column:1/-1;height:330px}}
+@media(max-width:600px){.hero-text{padding:90px 4vw 35px}.stats,.grid,.gallery,form{grid-template-columns:1fr}.gallery img,.gallery img:first-child{height:260px}.chat-btn{display:none}h1{font-size:46px}}
+</style>
+</head>
+<body>
+<header>
+<nav class="wrap">
+<div class="logo">West Miami <span>Rentals</span></div>
+<div class="links">
+<a href="#apartments">Apartments</a><a href="#photos">Photos</a><a href="#tour">Tour</a><a href="#apply">Apply</a>
+</div>
+<a class="btn" href="#tour">Get Matched</a>
+</nav>
+</header>
+
+<main>
+<section class="hero">
+<div class="hero-text">
+<span class="pill">West Miami apartments · move-in ready rentals</span>
+<h1>Find West Miami rentals that fit your budget.</h1>
+<p class="sub">Browse clean apartments in West Miami and nearby Miami neighborhoods. Schedule a tour, ask questions, check availability, or start the application process.</p>
+<div class="actions">
+<a class="btn gold" href="#tour">Schedule a Tour</a>
+<a class="btn dark" href="#apply">Start Application</a>
+<a class="btn dark" href="tel:+13055551234">Call Leasing</a>
+</div>
+<div class="stats">
+<div class="stat"><b>1–2 BR</b><small>Options</small></div>
+<div class="stat"><b>Fast</b><small>Follow up</small></div>
+<div class="stat"><b>Pet</b><small>Options</small></div>
+<div class="stat"><b>Miami</b><small>Area</small></div>
+</div>
+</div>
+<div class="hero-img">
+<div class="slide"></div><div class="slide"></div><div class="slide"></div><div class="slide"></div><div class="slide"></div><div class="slide"></div>
+<div class="video-card">
+<h2>Apartment tour preview</h2>
+<p>Use this landing page to capture renters, answer questions, and push qualified leads to a representative.</p>
+<div class="tags"><span class="tag">Move-In Ready</span><span class="tag">Tours Available</span><span class="tag">Apply Online</span></div>
+</div>
+</div>
+</section>
+
+<section id="apartments">
+<div class="wrap">
+<h2>Rental help without the runaround.</h2>
+<p class="lead">West Miami Rentals helps renters find available apartments, understand the application process, and connect with a leasing representative quickly.</p>
+<div class="grid">
+<div class="card"><h3>Available apartments</h3><p>Showcase West Miami apartments with pricing, photos, features, and application steps.</p></div>
+<div class="card"><h3>Lead qualification</h3><p>Collect move-in date, budget, bedrooms, pets, income range, and contact preference.</p></div>
+<div class="card"><h3>Rep handoff</h3><p>The bot and forms push serious renters to call, text, email, schedule, or apply.</p></div>
+</div>
+</div>
+</section>
+
+<section id="photos">
+<div class="wrap">
+<h2>Clean, modern apartment visuals.</h2>
+<p class="lead">Replace these photos later with your real West Miami apartment pictures.</p>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1200">
+<img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1200">
+<img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200">
+<img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200">
+</div>
+</div>
+</section>
+
+<section id="tour">
+<div class="wrap formbox">
+<h2>Get matched with available rentals.</h2>
+<p class="lead">Send your info and a representative can follow up with options that fit your budget and move-in date.</p>
+<form onsubmit="event.preventDefault(); alert('Lead captured. Connect this form to Formspree, EmailJS, Zapier, or GoHighLevel.');">
+<input required placeholder="Full name">
+<input required placeholder="Phone number">
+<input required type="email" placeholder="Email address">
+<input placeholder="Move-in date">
+<select><option>Budget range</option><option>Under $1,800</option><option>$1,800–$2,300</option><option>$2,300–$3,000</option><option>$3,000+</option></select>
+<select><option>Bedrooms</option><option>Studio</option><option>1 Bedroom</option><option>2 Bedrooms</option><option>3+ Bedrooms</option></select>
+<select><option>Pets?</option><option>No pets</option><option>Cat</option><option>Dog</option><option>Other</option></select>
+<select><option>Preferred contact</option><option>Text</option><option>Call</option><option>Email</option></select>
+<textarea placeholder="Tell us what area, amenities, or move-in needs you have."></textarea>
+<button class="btn gold wide" type="submit">Send My Rental Request</button>
+</form>
+</div>
+</section>
+
+<section id="apply">
+<div class="wrap apply">
+<div>
+<h2>Ready to apply?</h2>
+<p class="lead">Applicants can start with an intake form, then complete the official screening and lease process through the property manager’s approved portal.</p>
+<div class="actions">
+<a class="btn gold" href="application.html">Start Application</a>
+<a class="btn dark" href="#tour">Ask a Question</a>
+</div>
+</div>
+<div class="grid" style="grid-template-columns:1fr">
+<div class="card"><h3>1. Submit info</h3><p>Budget, move-in date, pets, income, and contact details.</p></div>
+<div class="card"><h3>2. Rep reviews</h3><p>A leasing representative confirms matches and availability.</p></div>
+<div class="card"><h3>3. Apply securely</h3><p>Final screening, credit checks, and leases happen through the official portal.</p></div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+<b>West Miami Rentals</b><br>
+Miami, FL · Replace phone/email with your client’s leasing contact<br>
+<span>Final approval, pricing, and availability are confirmed by property management.</span>
+</div>
+</footer>
+
+<button class="btn chat-btn" onclick="toggleChat()">Chat</button>
+<div class="chat" id="chat">
+<div class="chat-head"><b>West Miami Leasing Assistant</b><button onclick="toggleChat()">×</button></div>
+<div class="chat-body" id="chatBody"><div class="bubble bot">Hi! I can help with West Miami Rentals questions about pricing, availability, tours, pets, parking, and applications. What do you need?</div></div>
+<div class="quick">
+<button onclick="quick('What apartments are available?')">Availability</button>
+<button onclick="quick('How do I apply?')">Apply</button>
+<button onclick="quick('Can I schedule a tour?')">Tour</button>
+<button onclick="quick('Are pets allowed?')">Pets</button>
+</div>
+<div class="chat-input"><input id="chatInput" placeholder="Ask about West Miami Rentals..." onkeydown="if(event.key==='Enter')sendChat()"><button onclick="sendChat()">Send</button></div>
+</div>
+
+<script>
+function toggleChat(){document.getElementById('chat').classList.toggle('open')}
+function add(text,who='bot'){let b=document.getElementById('chatBody'),d=document.createElement('div');d.className='bubble '+who;d.textContent=text;b.appendChild(d);b.scrollTop=b.scrollHeight}
+function quick(t){document.getElementById('chatInput').value=t;sendChat()}
+function reply(m){m=m.toLowerCase();let allowed=['rent','price','cost','available','availability','apartment','apartments','miami','west miami','tour','schedule','apply','application','credit','screen','pet','dog','cat','parking','bedroom','studio','move','contact','phone','email'];
+if(!allowed.some(w=>m.includes(w)))return "I’m here to help with West Miami Rentals only. I can answer about availability, tours, applications, pets, parking, and connecting with a representative.";
+if(m.includes('apply')||m.includes('application')||m.includes('credit'))return "You can start on the application page. Final screening, credit/background checks, and approval should be completed through the property manager’s official portal.";
+if(m.includes('tour')||m.includes('schedule'))return "Yes, you can request a tour by filling out the form on this page. A representative can follow up with available times.";
+if(m.includes('pet')||m.includes('dog')||m.includes('cat'))return "Pet options may be available depending on the property. A leasing representative can confirm restrictions, fees, and approval.";
+if(m.includes('available')||m.includes('availability')||m.includes('apartment'))return "Availability can change quickly. Submit your budget, move-in date, and bedroom preference so a representative can match you with current options.";
+if(m.includes('rent')||m.includes('price')||m.includes('cost'))return "Pricing depends on the specific unit, size, and availability. Send your budget and move-in date to get matched with current West Miami rental options.";
+return "West Miami Rentals can help you find available apartments, schedule a tour, and start the application process. Would you like to get matched or apply?";
+}
+function sendChat(){let i=document.getElementById('chatInput'),m=i.value.trim();if(!m)return;add(m,'user');i.value='';setTimeout(()=>add(reply(m),'bot'),350)}
+</script>
+</body>
+</html>
